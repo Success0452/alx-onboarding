@@ -1,0 +1,20 @@
+START
+INPUT variable num1;
+INPUT variable num2;
+INPUT variable num3;
+Declare variable temp;
+IF num1 > num2 THEN
+    Initialise temp = num1
+    num1 = num2
+    num2 = temp
+IF num1 > num3 THEN
+    Initialize temp = num1
+    num1 = num3
+    num3 = temp
+IF num2 > num3 THEN
+    Initialize temp = num2
+    num2 = num3
+    num3 = temp
+DISPLAY "Sorted in ascending order"
+DISPLAY num1, num2, num3
+END
